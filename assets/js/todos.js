@@ -10,3 +10,10 @@ $("span").click(function(e){
 	});
 	e.stopPropagation();
 });
+
+// Press Enter to add new Todo from input
+$("input[type='text']").keypress(function(e){
+	if (e.which === 13) {
+		$("ul").append("<li>" + $(this).val() + "</li>");
+	}
+});
