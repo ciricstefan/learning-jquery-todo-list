@@ -18,3 +18,8 @@ $("input[type='text']").keypress(function(e){
 		$(this).val(""); 
 	}
 });
+
+//Toggling input form
+$(".fa-pencil-alt").click(function() {
+	$("input[type='text']").fadeToggle();
+});
