@@ -2,3 +2,11 @@
 $("li").click(function(){
 	$(this).toggleClass("checked");
 });
+
+// Click on X to delete Todo
+$("span").click(function(e){
+	$(this).parent().fadeOut(500, function(){
+		$(this).remove();
+	});
+	e.stopPropagation();
+});
