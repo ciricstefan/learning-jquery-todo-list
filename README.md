@@ -1,1 +1,1 @@
-# learning-jquery-todo-list
+# practicing-jquery-todo-list
